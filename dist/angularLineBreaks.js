@@ -7,10 +7,12 @@
       require: 'ngModel',
       link: function(scope, element, attr, ctrl) {
         return ctrl.$render = function() {
+          var html;
           if (ctrl.$modelValue == null) {
             return;
           }
-          return element.html(ctrl.$modelValue.replace(/\n$/, '<br/>&nbsp;').replace(/\n/g, '<br/>'));
+          html = ctrl.$modelValue.replace(/\n$/, '<br/>&nbsp;').replace(/\n/g, '<br/>');
+          return element.html(html);
         };
       }
     };

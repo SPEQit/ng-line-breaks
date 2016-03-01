@@ -1,6 +1,6 @@
 {
   "name": "ng-line-breaks",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "main": "dist/angularLineBreaks.js",
   "ignore": [],
   "dependencies": {
